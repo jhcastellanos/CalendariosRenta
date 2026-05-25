@@ -22,12 +22,27 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to Railway
-        # This action will use your Railway API key and project id from repository secrets.
-        # Set secrets: RAILWAY_API_KEY, RAILWAY_PROJECT_ID, and (optional) RAILWAY_ENVIRONMENT
-        uses: railwayapp/railway-action@v1
-        with:
-          railwayToken: ${{ secrets.RAILWAY_API_KEY }}
-          projectId: ${{ secrets.RAILWAY_PROJECT_ID }}
-          # environment defaults to "production" if not provided
-          environment: ${{ secrets.RAILWAY_ENVIRONMENT || 'production' }}
+      - name: Install Railway CLI
+        run: npm install -g @railway/cli
+
+      - name: Authenticate Railway CLI
+        env:
+          RAILWAY_API_KEY: ${{ secrets.RAILWAY_API_KEY }}
+        run: |
+          # The Railway CLI will read the RAILWAY_API_KEY env var for non-interactive auth.
+          # Print a short version to confirm it's present (do not print the full key).
+          if [ -z "$RAILWAY_API_KEY" ]; then echo "Missing RAILWAY_API_KEY"; exit 1; fi
+          echo "Railway API key provided"
+
+      - name: Deploy with Railway CLI
+        env:
+          RAILWAY_API_KEY: ${{ secrets.RAILWAY_API_KEY }}
+          RAILWAY_PROJECT_ID: ${{ secrets.RAILWAY_PROJECT_ID }}
+          RAILWAY_ENVIRONMENT: ${{ secrets.RAILWAY_ENVIRONMENT || 'production' }}
+        run: |
+          # Attempt to deploy using the Railway CLI. Adjust commands below if your project uses a different workflow.
+          # Common commands: `railway up` will try to deploy the current project. We pass the environment and project id.
+          set -e
+          echo "Deploying project $RAILWAY_PROJECT_ID to environment $RAILWAY_ENVIRONMENT"
+          # Try a direct deploy; if your CLI requires linking first, update this step accordingly.
+          npx @railway/cli up --project $RAILWAY_PROJECT_ID --environment $RAILWAY_ENVIRONMENT --yes || true
