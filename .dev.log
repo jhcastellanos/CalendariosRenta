@@ -1,0 +1,54 @@
+
+> calendarios-renta@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.5
+  - Local:        http://localhost:3000
+  - Environments: .env
+
+ ✓ Starting...
+ ✓ Ready in 1053ms
+ ○ Compiling /api/auth/login ...
+ ✓ Compiled /api/auth/login in 512ms (298 modules)
+LOGIN REQUEST {
+  identifier: 'admin',
+  user: { id: 'cmphpk1yi0000pqvq8di993hk', email: 'admin', role: 'admin' }
+}
+[LOGIN] Triggering calendar sync before completing login for user admin
+[SYNC] Starting automatic sync of all calendar sources...
+[SYNC] Syncing source: cmpilqfeu0001147s1p2pngo0 (airbnb) for property: Unidad 928
+[SYNC] Successfully synced source: cmpilqfeu0001147s1p2pngo0
+[SYNC] Syncing source: cmpilr4510003147sbdfovrwl (vrbo) for property: Unidad 928
+[SYNC] Successfully synced source: cmpilr4510003147sbdfovrwl
+[SYNC] Syncing source: cmpiltj30000x147slqdz9hsn (airbnb) for property: Efficency
+[SYNC] Successfully synced source: cmpiltj30000x147slqdz9hsn
+[SYNC] Syncing source: cmpilu5s8000z147sp4vmwjpl (vrbo) for property: Efficency
+[SYNC] Successfully synced source: cmpilu5s8000z147sp4vmwjpl
+[SYNC] Syncing source: cmpilv9my001f147skkss2dve (airbnb) for property: Unidad 930
+[SYNC] Successfully synced source: cmpilv9my001f147skkss2dve
+[SYNC] Syncing source: cmpilvozj001h147s99a2i9e5 (vrbo) for property: Unidad 930
+[SYNC] Successfully synced source: cmpilvozj001h147s99a2i9e5
+[SYNC] Automatic sync completed
+ POST /api/auth/login 200 in 12398ms
+ ○ Compiling /cleaning/dashboard ...
+(node:51983) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ Compiled /cleaning/dashboard in 1242ms (748 modules)
+ GET /cleaning/dashboard 200 in 2392ms
+ ✓ Compiled /api/sync-calendars in 62ms (508 modules)
+[SYNC] Starting automatic sync of all calendar sources...
+[SYNC] Syncing source: cmpilqfeu0001147s1p2pngo0 (airbnb) for property: Unidad 928
+[SYNC] Successfully synced source: cmpilqfeu0001147s1p2pngo0
+[SYNC] Syncing source: cmpilr4510003147sbdfovrwl (vrbo) for property: Unidad 928
+[SYNC] Successfully synced source: cmpilr4510003147sbdfovrwl
+[SYNC] Syncing source: cmpiltj30000x147slqdz9hsn (airbnb) for property: Efficency
+[SYNC] Successfully synced source: cmpiltj30000x147slqdz9hsn
+[SYNC] Syncing source: cmpilu5s8000z147sp4vmwjpl (vrbo) for property: Efficency
+[SYNC] Successfully synced source: cmpilu5s8000z147sp4vmwjpl
+[SYNC] Syncing source: cmpilv9my001f147skkss2dve (airbnb) for property: Unidad 930
+[SYNC] Successfully synced source: cmpilv9my001f147skkss2dve
+[SYNC] Syncing source: cmpilvozj001h147s99a2i9e5 (vrbo) for property: Unidad 930
+[SYNC] Successfully synced source: cmpilvozj001h147s99a2i9e5
+[SYNC] Automatic sync completed
+ GET /api/sync-calendars 200 in 7705ms
+ GET /api/sync-calendars 200 in 13ms
