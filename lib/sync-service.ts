@@ -3,6 +3,13 @@ import { reconcileCleaningsForProperty } from './ical';
 
 export async function syncAllCalendarSources() {
   try {
+    // During build (or in environments without a configured database) we must
+    // avoid performing network / DB operations. If no DATABASE_URL is set,
+    // skip the sync to prevent build-time failures on platforms like Vercel.
+    if (!process.env.DATABASE_URL) {
+      console.log('[SYNC] Skipping automatic sync because DATABASE_URL is not configured');
+      return;
+    }
     console.log('[SYNC] Starting automatic sync of all calendar sources...');
     
     const calendarSources = await prisma.calendarSource.findMany({

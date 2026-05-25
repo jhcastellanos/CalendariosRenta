@@ -1,4 +1,3 @@
-import { syncAllCalendarSources } from '@/lib/sync-service';
 import { NextResponse } from 'next/server';
 
 let lastSyncTime = 0;
@@ -18,6 +17,8 @@ export async function GET() {
   lastSyncTime = now;
 
   try {
+    // Dynamic import so build-time analysis doesn't execute DB/network code.
+    const { syncAllCalendarSources } = await import('@/lib/sync-service');
     await syncAllCalendarSources();
     return NextResponse.json({
       status: 'success',

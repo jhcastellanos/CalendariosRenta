@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
 import { NextRequest } from 'next/server';
 import { getUserByEmail, getLogoutCookie, getSessionCookie, signToken, verifyPassword } from '@/lib/auth';
-import { syncAllCalendarSources } from '@/lib/sync-service';
 
 export async function POST(request: NextRequest) {
   const body = await request.json();
@@ -31,6 +30,9 @@ export async function POST(request: NextRequest) {
     if (process.env.NODE_ENV !== 'production') {
       console.log('[LOGIN] Triggering calendar sync before completing login for user', user.email);
     }
+    // Import the sync implementation dynamically so build-time analysis
+    // doesn't evaluate database/network code (avoids running Prisma/fetch at build).
+    const { syncAllCalendarSources } = await import('@/lib/sync-service');
     await syncAllCalendarSources();
   } catch (err) {
     console.error('[LOGIN] Calendar sync failed during login:', err);
