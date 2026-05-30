@@ -135,10 +135,12 @@ function parseICalData(iCalData: string, sourceId: string): any[] {
 }
 
 function parseICalDate(dateStr: string): Date {
-  // Format: YYYYMMDD
+  // Format: YYYYMMDD. These are date-only values (no time/timezone), so we
+  // anchor them to UTC midnight. This keeps the calendar day stable no matter
+  // where the sync runs (local vs. Vercel/UTC) or where it's displayed.
   const year = parseInt(dateStr.substring(0, 4), 10);
   const month = parseInt(dateStr.substring(4, 6), 10);
   const day = parseInt(dateStr.substring(6, 8), 10);
 
-  return new Date(year, month - 1, day, 0, 0, 0, 0);
+  return new Date(Date.UTC(year, month - 1, day, 0, 0, 0, 0));
 }

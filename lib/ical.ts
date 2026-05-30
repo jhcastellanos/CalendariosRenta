@@ -7,12 +7,20 @@ const SOURCE_COLOR_MAP: Record<SourceType, string> = {
   vrbo: '#3b82f6',
 };
 
+// iCal reservation dates are date-only values. node-ical builds them at the
+// server's LOCAL midnight, so we re-anchor to UTC midnight using the local
+// calendar parts. This keeps the day stable regardless of server/browser TZ.
+function toUtcDateOnly(value: Date | string): Date {
+  const d = new Date(value);
+  return new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate(), 0, 0, 0, 0));
+}
+
 function extractEventData(item: ical.VEvent) {
   return {
     externalUid: String(item.uid || ''),
     guestName: item.summary ? String(item.summary) : null,
-    checkInDate: new Date(item.start),
-    checkOutDate: new Date(item.end),
+    checkInDate: toUtcDateOnly(item.start),
+    checkOutDate: toUtcDateOnly(item.end),
     status: item.status === 'CANCELLED' ? ReservationStatus.canceled : ReservationStatus.active,
   };
 }

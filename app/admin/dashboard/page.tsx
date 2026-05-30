@@ -63,10 +63,10 @@ export default async function AdminDashboard() {
                 <div key={reservation.id} className={`rounded-3xl border border-slate-200 p-5 shadow-sm ${borderColor}`}>
                   <h3 className="text-lg font-semibold text-slate-900">{reservation.property.title}</h3>
                   <div className="mt-3 space-y-2">
-                    <p className="text-4xl font-bold text-slate-900">{new Date(reservation.checkOutDate).toLocaleDateString('es-ES')}</p>
-                    <p className="text-xs text-slate-500">Checkout: {new Date(reservation.checkOutDate).toLocaleDateString('es-ES', { weekday: 'short' })}</p>
+                    <p className="text-4xl font-bold text-slate-900">{new Date(reservation.checkOutDate).toLocaleDateString('es-ES', { timeZone: 'UTC' })}</p>
+                    <p className="text-xs text-slate-500">Checkout: {new Date(reservation.checkOutDate).toLocaleDateString('es-ES', { weekday: 'short', timeZone: 'UTC' })}</p>
                   </div>
-                  <p className="mt-3 text-sm text-slate-600">Check-in: {new Date(reservation.checkInDate).toLocaleDateString('es-ES')}</p>
+                  <p className="mt-3 text-sm text-slate-600">Check-in: {new Date(reservation.checkInDate).toLocaleDateString('es-ES', { timeZone: 'UTC' })}</p>
                   <p className="mt-3 text-sm text-slate-500">Huésped: {reservation.guestName || 'No disponible'}</p>
                   <div className="mt-4 flex items-center justify-between">
                     <div className="flex items-center gap-2">

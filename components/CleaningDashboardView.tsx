@@ -125,6 +125,7 @@ export function CleaningDashboardView({ cleaningsToday, upcomingCleanings, userN
               day: 'numeric',
               month: 'short',
               year: 'numeric',
+              timeZone: 'UTC',
             });
             const guestName = cleaning.reservation.guestName || 'Reserva sin nombre';
             const initial = guestName.trim().charAt(0).toUpperCase() || 'R';

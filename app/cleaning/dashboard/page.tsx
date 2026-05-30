@@ -15,9 +15,11 @@ export default async function CleaningDashboard() {
   }
 
   const now = new Date();
-  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  // Reservation/cleaning dates are stored at UTC midnight, so compute the
+  // "today" window in UTC to match them regardless of server timezone.
+  const today = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
   const tomorrow = new Date(today);
-  tomorrow.setDate(tomorrow.getDate() + 1);
+  tomorrow.setUTCDate(tomorrow.getUTCDate() + 1);
 
   // Limpiezas de hoy
   const cleaningsToday = await prisma.cleaning.findMany({

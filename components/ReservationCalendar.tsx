@@ -43,8 +43,8 @@ export function ReservationCalendar({ reservations }: { reservations: any[] }) {
                 {sourceReservations.map((reservation: any) => (
                   <div key={reservation.id} className={`rounded-3xl border border-slate-200 p-5 shadow-sm ${getSourceColor(sourceType).card}`}>
                     <h3 className="text-lg font-semibold text-slate-900">{reservation.property.title}</h3>
-                    <p className="mt-3 text-sm text-slate-600">Check-in: {new Date(reservation.checkInDate).toLocaleDateString('es-ES')}</p>
-                    <p className="text-sm text-slate-600">Check-out: {new Date(reservation.checkOutDate).toLocaleDateString('es-ES')}</p>
+                    <p className="mt-3 text-sm text-slate-600">Check-in: {new Date(reservation.checkInDate).toLocaleDateString('es-ES', { timeZone: 'UTC' })}</p>
+                    <p className="text-sm text-slate-600">Check-out: {new Date(reservation.checkOutDate).toLocaleDateString('es-ES', { timeZone: 'UTC' })}</p>
                     <p className="mt-3 text-sm text-slate-500">Huésped: {reservation.guestName || 'No disponible'}</p>
                     <div className="mt-4 flex items-center gap-2">
                       <div className={`h-3 w-3 rounded-full ${sourceType === 'airbnb' ? 'bg-airbnb' : 'bg-vrbo'}`} />

@@ -72,7 +72,7 @@ export default async function PropertyDetails({ params }: { params: { id: string
                 <div className="mt-4 space-y-3">
                   {property.cleanings.slice(0, 4).map((cleaning) => (
                     <div key={cleaning.id} className="rounded-3xl bg-slate-50 p-4">
-                      <p className="text-sm font-semibold text-slate-900">{new Date(cleaning.cleaningDate).toLocaleDateString('es-ES')}</p>
+                      <p className="text-sm font-semibold text-slate-900">{new Date(cleaning.cleaningDate).toLocaleDateString('es-ES', { timeZone: 'UTC' })}</p>
                       <p className="text-sm text-slate-500">{cleaning.status}</p>
                     </div>
                   ))}
@@ -103,7 +103,7 @@ export default async function PropertyDetails({ params }: { params: { id: string
                         </div>
                         <span className="text-sm text-slate-500">{reservation.status}</span>
                       </div>
-                      <p className="mt-2 text-sm text-slate-600">Estadía: {new Date(reservation.checkInDate).toLocaleDateString('es-ES')} - {new Date(reservation.checkOutDate).toLocaleDateString('es-ES')}</p>
+                      <p className="mt-2 text-sm text-slate-600">Estadía: {new Date(reservation.checkInDate).toLocaleDateString('es-ES', { timeZone: 'UTC' })} - {new Date(reservation.checkOutDate).toLocaleDateString('es-ES', { timeZone: 'UTC' })}</p>
                       <p className="mt-1 text-sm text-slate-500">Huésped: {reservation.guestName || 'No disponible'}</p>
                     </li>
                   );

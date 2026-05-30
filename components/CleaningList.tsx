@@ -25,7 +25,7 @@ export function CleaningList({ cleanings }: { cleanings: any[] }) {
   const sourceOptions = useMemo(() => Array.from(new Set(cleanings.map((item) => item.reservation.calendarSource.sourceType))), [cleanings]);
 
   const grouped = filtered.reduce((acc: Record<string, any[]>, item) => {
-    const key = new Date(item.cleaningDate).toLocaleDateString('es-ES', { day: '2-digit', month: 'long', year: 'numeric' });
+    const key = new Date(item.cleaningDate).toLocaleDateString('es-ES', { day: '2-digit', month: 'long', year: 'numeric', timeZone: 'UTC' });
     if (!acc[key]) acc[key] = [];
     acc[key].push(item);
     return acc;
