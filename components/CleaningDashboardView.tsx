@@ -28,14 +28,18 @@ interface CleaningViewProps {
 
 const platformStyles = {
   airbnb: {
-    border: 'border-red-500',
-    label: 'bg-red-50 text-red-700',
-    dot: 'bg-red-500',
+    name: 'Airbnb',
+    badge: 'bg-gradient-to-r from-[#FF5A5F] to-[#E61E4D]',
+    accentText: 'text-[#E61E4D]',
+    avatar: 'bg-gradient-to-br from-[#FF5A5F] to-[#E61E4D]',
+    glow: 'group-hover:ring-[#FF5A5F]/40',
   },
   vrbo: {
-    border: 'border-blue-500',
-    label: 'bg-blue-50 text-blue-700',
-    dot: 'bg-blue-500',
+    name: 'Vrbo',
+    badge: 'bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8]',
+    accentText: 'text-[#1D4ED8]',
+    avatar: 'bg-gradient-to-br from-[#3B82F6] to-[#1D4ED8]',
+    glow: 'group-hover:ring-[#3B82F6]/40',
   },
 };
 
@@ -107,63 +111,76 @@ export function CleaningDashboardView({ cleaningsToday, upcomingCleanings, userN
         </h1>
       </div>
 
-      <div className="space-y-4 rounded-[32px] border border-slate-200 bg-white p-6 shadow-soft">
-        <div className="space-y-5">
-          {cardRows.length === 0 ? (
-            <p className="text-sm text-slate-600">No hay limpiezas para esta vista.</p>
-          ) : (
-            cardRows.map((cleaning, index) => {
-              const type = cleaning.reservation.sourceType;
-              const imageUrl = cleaning.property.photoUrl || '/default-house.jpg';
-              const formattedCheckout = cleaning.checkOutDate.toLocaleDateString('es-ES', { day: 'numeric', month: 'short', year: 'numeric' });
+      {cardRows.length === 0 ? (
+        <div className="rounded-3xl border border-dashed border-slate-300 bg-white/60 p-12 text-center">
+          <p className="text-base font-medium text-slate-500">No hay limpiezas para esta vista.</p>
+        </div>
+      ) : (
+        <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+          {cardRows.map((cleaning) => {
+            const type = cleaning.reservation.sourceType;
+            const style = platformStyles[type];
+            const imageUrl = cleaning.property.photoUrl || '/default-house.jpg';
+            const formattedCheckout = cleaning.checkOutDate.toLocaleDateString('es-ES', {
+              day: 'numeric',
+              month: 'short',
+              year: 'numeric',
+            });
+            const guestName = cleaning.reservation.guestName || 'Reserva sin nombre';
+            const initial = guestName.trim().charAt(0).toUpperCase() || 'R';
 
-              return (
-                <div
-                  key={cleaning.id}
-                  className={`relative overflow-hidden rounded-[32px] border border-slate-200 border-l-8 bg-white p-5 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-lg ${platformStyles[type].border}`}>
-                  <div className="flex items-center gap-4">
-                    <div className={`min-w-[92px] rounded-3xl px-4 py-3 text-center ${platformStyles[type].label}`}>
-                        <p className="text-xs font-semibold uppercase tracking-[0.24em]">{type.toUpperCase()}</p>
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-sm font-semibold text-slate-500">Checkout</p>
-                      <p className="mt-2 text-xl font-semibold text-slate-900">{formattedCheckout}</p>
-                      <p className="mt-2 text-sm text-slate-600">{cleaning.property.title}</p>
-                    </div>
-                    <div className="flex h-20 w-24 items-center justify-center overflow-hidden rounded-[24px] bg-slate-100">
-                      <img
-                        src={imageUrl}
-                        alt={cleaning.property.title}
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                  </div>
-                  <div className="mt-4 flex items-center justify-between text-sm text-slate-500">
-                    <span className="inline-flex items-center gap-2">
-                      <span className={`h-2.5 w-2.5 rounded-full ${platformStyles[type].dot}`} />
-                      {type.toUpperCase()}
+            return (
+              <div
+                key={cleaning.id}
+                className={`group overflow-hidden rounded-3xl bg-white shadow-soft ring-1 ring-slate-200/70 transition duration-300 hover:-translate-y-1 hover:shadow-xl ${style.glow}`}>
+                <div className="relative h-44 w-full overflow-hidden">
+                  <img
+                    src={imageUrl}
+                    alt={cleaning.property.title}
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/0 to-black/0" />
+                  <span
+                    className={`absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-white shadow-lg ${style.badge}`}>
+                    <span className="h-1.5 w-1.5 rounded-full bg-white/90" />
+                    {style.name}
+                  </span>
+                </div>
+
+                <div className="p-6">
+                  <p className={`text-xs font-bold uppercase tracking-[0.22em] ${style.accentText}`}>Checkout</p>
+                  <p className="mt-1.5 text-3xl font-bold leading-tight text-slate-900">{formattedCheckout}</p>
+                  <p className="mt-2 text-lg font-semibold text-slate-700">{cleaning.property.title}</p>
+
+                  <div className="mt-5 flex items-center gap-3 border-t border-slate-100 pt-4">
+                    <span
+                      className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-base font-bold text-white ${style.avatar}`}>
+                      {initial}
                     </span>
-                    <span>{cleaning.reservation.guestName || 'Guest reservado'}</span>
+                    <div className="min-w-0">
+                      <p className="truncate text-sm font-semibold text-slate-800">{guestName}</p>
+                      <p className="text-xs text-slate-400">Reservado</p>
+                    </div>
                   </div>
                 </div>
-              );
-            })
-          )}
+              </div>
+            );
+          })}
         </div>
+      )}
 
-        {remainingCount > 0 && (
-          <button
-            type="button"
-            onClick={() => {
-              if (activeTab === 'today') setShowMoreToday(true);
-              else setShowMoreUpcoming(true);
-            }}
-            className="mx-auto block rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
-          >
-            Ver más ({remainingCount})
-          </button>
-        )}
-      </div>
+      {remainingCount > 0 && (
+        <button
+          type="button"
+          onClick={() => {
+            if (activeTab === 'today') setShowMoreToday(true);
+            else setShowMoreUpcoming(true);
+          }}
+          className="mx-auto block rounded-full bg-slate-900 px-7 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+        >
+          Ver más ({remainingCount})
+        </button>
+      )}
     </div>
   );
 }

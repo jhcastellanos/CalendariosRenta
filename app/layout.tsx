@@ -1,6 +1,5 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { AutoSyncProvider } from '@/components/AutoSyncProvider';
 
 export const dynamic = 'force-dynamic';
 
@@ -13,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es">
       <body className="min-h-screen bg-surface text-slate-900">
-        <AutoSyncProvider>{children}</AutoSyncProvider>
+        {children}
       </body>
     </html>
   );

@@ -52,3 +52,1709 @@ LOGIN REQUEST {
 [SYNC] Automatic sync completed
  GET /api/sync-calendars 200 in 7705ms
  GET /api/sync-calendars 200 in 13ms
+ GET /api/sync-calendars 200 in 20ms
+[SYNC] Starting automatic sync of all calendar sources...
+[SYNC] Syncing source: cmpilqfeu0001147s1p2pngo0 (airbnb) for property: Unidad 928
+[SYNC] Successfully synced source: cmpilqfeu0001147s1p2pngo0
+[SYNC] Syncing source: cmpilr4510003147sbdfovrwl (vrbo) for property: Unidad 928
+[SYNC] Successfully synced source: cmpilr4510003147sbdfovrwl
+[SYNC] Syncing source: cmpiltj30000x147slqdz9hsn (airbnb) for property: Efficency
+[SYNC] Successfully synced source: cmpiltj30000x147slqdz9hsn
+[SYNC] Syncing source: cmpilu5s8000z147sp4vmwjpl (vrbo) for property: Efficency
+[SYNC] Successfully synced source: cmpilu5s8000z147sp4vmwjpl
+[SYNC] Syncing source: cmpilv9my001f147skkss2dve (airbnb) for property: Unidad 930
+[SYNC] Successfully synced source: cmpilv9my001f147skkss2dve
+[SYNC] Syncing source: cmpilvozj001h147s99a2i9e5 (vrbo) for property: Unidad 930
+[SYNC] Successfully synced source: cmpilvozj001h147s99a2i9e5
+[SYNC] Automatic sync completed
+ GET /api/sync-calendars 200 in 8799ms
+ ✓ Compiled in 707ms (575 modules)
+ ⨯ Error: Dynamic server usage: Page with `dynamic = "force-dynamic"` won't be rendered statically.
+    at rq (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:8188)
+    at async r5 (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:17706) {
+  digest: 'DYNAMIC_SERVER_USAGE',
+  page: '/cleaning/dashboard'
+}
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ Error: Dynamic server usage: Page with `dynamic = "force-dynamic"` won't be rendered statically.
+    at rq (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:8188)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:575:9)
+    at process.processTimers (node:internal/timers:549:7)
+    at async r5 (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:17706) {
+  digest: 'DYNAMIC_SERVER_USAGE',
+  page: '/cleaning/dashboard'
+}
+ ✓ Compiled /_error in 397ms (788 modules)
+ GET /cleaning/dashboard 500 in 270ms
+ ⨯ Error: Dynamic server usage: Page with `dynamic = "force-dynamic"` won't be rendered statically.
+    at rq (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:8188)
+    at async r5 (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:17706) {
+  digest: 'DYNAMIC_SERVER_USAGE',
+  page: '/cleaning/dashboard'
+}
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/buffer-equal-constant-time' in /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server for build dependencies doesn't lead to expected result '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/buffer-equal-constant-time.js', but to 'Error: Can't resolve './vendor-chunks/buffer-equal-constant-time' in '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/buffer-equal-constant-time (expected /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/buffer-equal-constant-time.js)
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/pages/_error.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/pages/_error.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at resolve commonjs /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/jwa' in /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server for build dependencies doesn't lead to expected result '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/jwa.js', but to 'Error: Can't resolve './vendor-chunks/jwa' in '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/jwa (expected /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/jwa.js)
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/pages/_error.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/pages/_error.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at resolve commonjs /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/lodash.includes' in /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server for build dependencies doesn't lead to expected result '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/lodash.includes.js', but to 'Error: Can't resolve './vendor-chunks/lodash.includes' in '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/lodash.includes (expected /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/lodash.includes.js)
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/pages/_error.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/pages/_error.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at resolve commonjs /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+ ✓ Compiled in 85ms (430 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /cleaning/dashboard 200 in 9ms
+ ⨯ Error: Dynamic server usage: Page with `dynamic = "force-dynamic"` won't be rendered statically.
+    at rq (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:8188)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:575:9)
+    at process.processTimers (node:internal/timers:549:7)
+    at async r5 (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:17706) {
+  digest: 'DYNAMIC_SERVER_USAGE',
+  page: '/cleaning/dashboard'
+}
+ ⨯ Error: Dynamic server usage: Page with `dynamic = "force-dynamic"` won't be rendered statically.
+    at rq (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:8188)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:575:9)
+    at process.processTimers (node:internal/timers:549:7)
+    at async r5 (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:17706) {
+  digest: 'DYNAMIC_SERVER_USAGE',
+  page: '/cleaning/dashboard'
+}
+ GET /cleaning/dashboard 500 in 13ms
+ ✓ Compiled /_not-found in 77ms (789 modules)
+ ⨯ Error: Dynamic server usage: Page with `dynamic = "force-dynamic"` won't be rendered statically.
+    at rq (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:8188)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:575:9)
+    at process.processTimers (node:internal/timers:549:7)
+    at async r5 (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:17706) {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+ ⨯ Error: Dynamic server usage: Page with `dynamic = "force-dynamic"` won't be rendered statically.
+    at rq (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:8188)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:575:9)
+    at process.processTimers (node:internal/timers:549:7)
+    at async r5 (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:17706) {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+ ⨯ Error: Dynamic server usage: Page with `dynamic = "force-dynamic"` won't be rendered statically.
+    at rq (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:8188)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:575:9)
+    at process.processTimers (node:internal/timers:549:7)
+    at async r5 (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:17706) {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+ ⨯ Error: Dynamic server usage: Page with `dynamic = "force-dynamic"` won't be rendered statically.
+    at rq (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:8188)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:575:9)
+    at process.processTimers (node:internal/timers:549:7)
+    at async r5 (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:17706) {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+ GET /_next/static/chunks/pages/_app.js 500 in 1444ms
+ GET /_next/static/chunks/main.js 500 in 1447ms
+ GET /_next/static/chunks/react-refresh.js 500 in 1446ms
+ GET /_next/static/chunks/pages/_error.js 500 in 1442ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/@swc.js'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/@swc' in /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server for build dependencies doesn't lead to expected result '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/@swc.js', but to 'Error: Can't resolve './vendor-chunks/@swc' in '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/@swc (expected /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/@swc.js)
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/handle-externals.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/handle-externals.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at resolve commonjs /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/next' in /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server for build dependencies doesn't lead to expected result '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/next.js', but to 'Error: Can't resolve './vendor-chunks/next' in '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/next (expected /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/next.js)
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/handle-externals.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/handle-externals.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at resolve commonjs /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/@swc.js'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/@swc.js'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/@swc.js'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/@swc' in /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server for build dependencies doesn't lead to expected result '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/@swc.js', but to 'Error: Can't resolve './vendor-chunks/@swc' in '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/@swc (expected /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/@swc.js)
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/api/sync-calendars/route.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/api/sync-calendars/route.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/handle-externals.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/handle-externals.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at resolve commonjs /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/next' in /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server for build dependencies doesn't lead to expected result '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/next.js', but to 'Error: Can't resolve './vendor-chunks/next' in '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/next (expected /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/next.js)
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/api/sync-calendars/route.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/api/sync-calendars/route.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/handle-externals.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/handle-externals.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at resolve commonjs /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/@swc' in /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server for build dependencies doesn't lead to expected result '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/@swc.js', but to 'Error: Can't resolve './vendor-chunks/@swc' in '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/@swc (expected /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/@swc.js)
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/api/sync-calendars/route.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/api/sync-calendars/route.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/handle-externals.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/handle-externals.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at resolve commonjs /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/@swc' in /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server for build dependencies doesn't lead to expected result '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/@swc.js', but to 'Error: Can't resolve './vendor-chunks/@swc' in '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/@swc (expected /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/@swc.js)
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/handle-externals.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/handle-externals.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at resolve commonjs /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/next' in /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server for build dependencies doesn't lead to expected result '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/next.js', but to 'Error: Can't resolve './vendor-chunks/next' in '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/next (expected /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/next.js)
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/handle-externals.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/handle-externals.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at resolve commonjs /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/next' in /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server for build dependencies doesn't lead to expected result '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/next.js', but to 'Error: Can't resolve './vendor-chunks/next' in '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/next (expected /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/next.js)
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/api/sync-calendars/route.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/api/sync-calendars/route.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/handle-externals.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/handle-externals.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+<w>  at resolve commonjs /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+ ✓ Compiled / in 156ms (835 modules)
+ ⨯ Error: Dynamic server usage: Page with `dynamic = "force-dynamic"` won't be rendered statically.
+    at rq (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:8188)
+    at async r5 (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:17706) {
+  digest: 'DYNAMIC_SERVER_USAGE',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1409:15)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1060:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1065:22)
+    at Function._load (node:internal/modules/cjs/loader:1214:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at __webpack_require__.f.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:198:28)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:162:22)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/pages/_document.js:1:335
+    at Object.<anonymous> (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/pages/_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js:109:84)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/next-server.js:710:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ GET / 500 in 190ms
+ ⨯ Error: Dynamic server usage: Page with `dynamic = "force-dynamic"` won't be rendered statically.
+    at rq (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:8188)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:575:9)
+    at process.processTimers (node:internal/timers:549:7)
+    at async r5 (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:17706) {
+  digest: 'DYNAMIC_SERVER_USAGE',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1409:15)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1060:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1065:22)
+    at Function._load (node:internal/modules/cjs/loader:1214:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at __webpack_require__.f.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:198:28)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:162:22)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/pages/_document.js:1:335
+    at Object.<anonymous> (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/pages/_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js:109:84)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/next-server.js:710:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ GET / 500 in 13ms
+[Error: ENOENT: no such file or directory, stat '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/cache/webpack/client-development/1.pack.gz'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/cache/webpack/client-development/1.pack.gz'
+}
+ ⨯ unhandledRejection: [Error: ENOENT: no such file or directory, stat '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/cache/webpack/client-development/1.pack.gz'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/cache/webpack/client-development/1.pack.gz'
+}
+ ⨯ unhandledRejection: [Error: ENOENT: no such file or directory, stat '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/cache/webpack/client-development/1.pack.gz'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/cache/webpack/client-development/1.pack.gz'
+}
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, stat '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/cache/webpack/client-development/1.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/@swc' in /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server for build dependencies doesn't lead to expected result '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/@swc.js', but to 'Error: Can't resolve './vendor-chunks/@swc' in '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/@swc (expected /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/@swc.js)
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/api/sync-calendars/route.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/api/sync-calendars/route.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at resolve commonjs /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/next' in /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server for build dependencies doesn't lead to expected result '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/next.js', but to 'Error: Can't resolve './vendor-chunks/next' in '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/next (expected /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/vendor-chunks/next.js)
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/api/sync-calendars/route.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/api/sync-calendars/route.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at file /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at resolve commonjs /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+ ⨯ Error: Dynamic server usage: Page with `dynamic = "force-dynamic"` won't be rendered statically.
+    at rq (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:8188)
+    at async r5 (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:17706) {
+  digest: 'DYNAMIC_SERVER_USAGE',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1409:15)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1060:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1065:22)
+    at Function._load (node:internal/modules/cjs/loader:1214:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at __webpack_require__.f.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:198:28)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:162:22)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/pages/_document.js:1:335
+    at Object.<anonymous> (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/pages/_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js:109:84)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/next-server.js:710:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ GET / 500 in 42ms
+ ⨯ Error: Cannot find module './276.js'
+Require stack:
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1409:15)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1060:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1065:22)
+    at Function._load (node:internal/modules/cjs/loader:1214:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at __webpack_require__.f.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:198:28)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:162:22)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6418
+    at Object.<anonymous> (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6462)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js:109:84)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2097:30)
+    at async pipe.req.req (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2063:30)
+    at async DevServer.pipeImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:920:25)
+    at async /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:368:24)
+    at async requestHandlerImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './276.js'
+Require stack:
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1409:15)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1060:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1065:22)
+    at Function._load (node:internal/modules/cjs/loader:1214:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at __webpack_require__.f.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:198:28)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:162:22)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6418
+    at Object.<anonymous> (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6462)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js:109:84)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2097:30)
+    at async pipe.req.req (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2063:30)
+    at async DevServer.pipeImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:920:25)
+    at async /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:368:24)
+    at async requestHandlerImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './276.js'
+Require stack:
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1409:15)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1060:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1065:22)
+    at Function._load (node:internal/modules/cjs/loader:1214:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at __webpack_require__.f.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:198:28)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:162:22)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6418
+    at Object.<anonymous> (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6462)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js:109:84)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2097:30)
+    at async pipe.req.req (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2063:30)
+    at async DevServer.pipeImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:920:25)
+    at async /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:368:24)
+    at async requestHandlerImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './276.js'
+Require stack:
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1409:15)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1060:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1065:22)
+    at Function._load (node:internal/modules/cjs/loader:1214:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at __webpack_require__.f.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:198:28)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:162:22)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6418
+    at Object.<anonymous> (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6462)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js:109:84)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2097:30)
+    at async pipe.req.req (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2063:30)
+    at async DevServer.pipeImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:920:25)
+    at async /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:368:24)
+    at async requestHandlerImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './276.js'
+Require stack:
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1409:15)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1060:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1065:22)
+    at Function._load (node:internal/modules/cjs/loader:1214:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at __webpack_require__.f.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:198:28)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:162:22)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6418
+    at Object.<anonymous> (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6462)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js:109:84)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2097:30)
+    at async pipe.req.req (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2063:30)
+    at async DevServer.pipeImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:920:25)
+    at async /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:368:24)
+    at async requestHandlerImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ GET /_next/static/chunks/fallback/main.js 500 in 22ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 20ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 19ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 18ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 18ms
+ ⨯ Error: Dynamic server usage: Page with `dynamic = "force-dynamic"` won't be rendered statically.
+    at rq (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:8188)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:575:9)
+    at process.processTimers (node:internal/timers:549:7)
+    at async r5 (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:17706) {
+  digest: 'DYNAMIC_SERVER_USAGE',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1409:15)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1060:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1065:22)
+    at Function._load (node:internal/modules/cjs/loader:1214:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at __webpack_require__.f.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:198:28)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:162:22)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/pages/_document.js:1:335
+    at Object.<anonymous> (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/pages/_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js:109:84)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/next-server.js:710:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ GET / 500 in 13ms
+ ⨯ Error: Cannot find module './276.js'
+Require stack:
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1409:15)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1060:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1065:22)
+    at Function._load (node:internal/modules/cjs/loader:1214:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at __webpack_require__.f.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:198:28)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:162:22)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6418
+    at Object.<anonymous> (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6462)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js:109:84)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2097:30)
+    at async pipe.req.req (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2063:30)
+    at async DevServer.pipeImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:920:25)
+    at async /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:368:24)
+    at async requestHandlerImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './276.js'
+Require stack:
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1409:15)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1060:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1065:22)
+    at Function._load (node:internal/modules/cjs/loader:1214:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at __webpack_require__.f.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:198:28)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:162:22)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6418
+    at Object.<anonymous> (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6462)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js:109:84)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2097:30)
+    at async pipe.req.req (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2063:30)
+    at async DevServer.pipeImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:920:25)
+    at async /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:368:24)
+    at async requestHandlerImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './276.js'
+Require stack:
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1409:15)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1060:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1065:22)
+    at Function._load (node:internal/modules/cjs/loader:1214:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at __webpack_require__.f.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:198:28)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:162:22)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6418
+    at Object.<anonymous> (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6462)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js:109:84)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2097:30)
+    at async pipe.req.req (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2063:30)
+    at async DevServer.pipeImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:920:25)
+    at async /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:368:24)
+    at async requestHandlerImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './276.js'
+Require stack:
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1409:15)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1060:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1065:22)
+    at Function._load (node:internal/modules/cjs/loader:1214:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at __webpack_require__.f.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:198:28)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:162:22)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6418
+    at Object.<anonymous> (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6462)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js:109:84)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2097:30)
+    at async pipe.req.req (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2063:30)
+    at async DevServer.pipeImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:920:25)
+    at async /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:368:24)
+    at async requestHandlerImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './276.js'
+Require stack:
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1409:15)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1060:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1065:22)
+    at Function._load (node:internal/modules/cjs/loader:1214:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at __webpack_require__.f.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:198:28)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:162:22)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6418
+    at Object.<anonymous> (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6462)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js:109:84)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2097:30)
+    at async pipe.req.req (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2063:30)
+    at async DevServer.pipeImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:920:25)
+    at async /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:368:24)
+    at async requestHandlerImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ GET /_next/static/chunks/fallback/webpack.js 500 in 11ms
+ GET /_next/static/chunks/fallback/main.js 500 in 11ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 10ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 9ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 10ms
+ ⨯ Error: Dynamic server usage: Page with `dynamic = "force-dynamic"` won't be rendered statically.
+    at rq (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:8188)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:575:9)
+    at process.processTimers (node:internal/timers:549:7)
+    at async r5 (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:17706) {
+  digest: 'DYNAMIC_SERVER_USAGE',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1409:15)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1060:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1065:22)
+    at Function._load (node:internal/modules/cjs/loader:1214:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at __webpack_require__.f.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:198:28)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:162:22)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/pages/_document.js:1:335
+    at Object.<anonymous> (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/pages/_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js:109:84)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/next-server.js:710:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ GET / 500 in 23ms
+ ⨯ Error: Cannot find module './276.js'
+Require stack:
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1409:15)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1060:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1065:22)
+    at Function._load (node:internal/modules/cjs/loader:1214:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at __webpack_require__.f.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:198:28)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:162:22)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6418
+    at Object.<anonymous> (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6462)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js:109:84)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2097:30)
+    at async pipe.req.req (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2063:30)
+    at async DevServer.pipeImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:920:25)
+    at async /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:368:24)
+    at async requestHandlerImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './276.js'
+Require stack:
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1409:15)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1060:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1065:22)
+    at Function._load (node:internal/modules/cjs/loader:1214:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at __webpack_require__.f.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:198:28)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:162:22)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6418
+    at Object.<anonymous> (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6462)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js:109:84)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2097:30)
+    at async pipe.req.req (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2063:30)
+    at async DevServer.pipeImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:920:25)
+    at async /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:368:24)
+    at async requestHandlerImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './276.js'
+Require stack:
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1409:15)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1060:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1065:22)
+    at Function._load (node:internal/modules/cjs/loader:1214:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at __webpack_require__.f.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:198:28)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:162:22)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6418
+    at Object.<anonymous> (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6462)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js:109:84)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2097:30)
+    at async pipe.req.req (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2063:30)
+    at async DevServer.pipeImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:920:25)
+    at async /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:368:24)
+    at async requestHandlerImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ GET /_next/static/chunks/fallback/webpack.js 500 in 12ms
+ GET /_next/static/chunks/fallback/main.js 500 in 12ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 11ms
+ ⨯ Error: Cannot find module './276.js'
+Require stack:
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1409:15)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1060:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1065:22)
+    at Function._load (node:internal/modules/cjs/loader:1214:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at __webpack_require__.f.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:198:28)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:162:22)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6418
+    at Object.<anonymous> (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6462)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js:109:84)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2097:30)
+    at async pipe.req.req (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2063:30)
+    at async DevServer.pipeImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:920:25)
+    at async /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:368:24)
+    at async requestHandlerImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './276.js'
+Require stack:
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js
+- /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1409:15)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1060:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1065:22)
+    at Function._load (node:internal/modules/cjs/loader:1214:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at __webpack_require__.f.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:198:28)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js:162:22)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6418
+    at Object.<anonymous> (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/_not-found/page.js:1:6462)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1495:12)
+    at mod.require (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js:109:84)
+    at /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2097:30)
+    at async pipe.req.req (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:2063:30)
+    at async DevServer.pipeImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/base-server.js:920:25)
+    at async /Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:368:24)
+    at async requestHandlerImpl (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/webpack-runtime.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/.next/server/app/page.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/require.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/load-components.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/build/utils.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/jorgecastellanos/CalendariosRenta/CalendariosRenta/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 6ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 6ms

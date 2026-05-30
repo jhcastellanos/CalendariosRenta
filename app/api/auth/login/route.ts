@@ -26,8 +26,8 @@ export async function POST(request: NextRequest) {
 
   const token = signToken({ id: user.id, name: user.name, email: user.email, role: user.role });
 
-  // Note: calendar syncing is handled by AutoSyncProvider (on page load and
-  // every few minutes), so we intentionally do NOT block login on a full sync.
+  // Login stays fast: the calendar sync runs after auth via /api/sync-on-login
+  // (throttled to once per hour), shown with a visual "syncing" screen.
   const response = NextResponse.json({ id: user.id, name: user.name, email: user.email, role: user.role });
   response.headers.set('Set-Cookie', getSessionCookie(token));
   return response;

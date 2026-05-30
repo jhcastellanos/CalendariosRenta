@@ -1,14 +1,13 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
 import { FormEvent, useState } from 'react';
 
 export default function LoginPage() {
-  const router = useRouter();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [syncing, setSyncing] = useState(false);
 
   async function handleLogin(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -30,17 +29,45 @@ export default function LoginPage() {
       return;
     }
 
-    setLoading(false);
-
-    if (response.ok) {
-      const data = await response.json();
-      const destination = data.role === 'admin' ? '/admin/dashboard' : '/cleaning/dashboard';
-      window.location.href = destination;
+    if (!response.ok) {
+      const result = await response.json();
+      setError(result.message || 'Credenciales incorrectas');
+      setLoading(false);
       return;
     }
 
-    const result = await response.json();
-    setError(result.message || 'Credenciales incorrectas');
+    const data = await response.json();
+    const destination = data.role === 'admin' ? '/admin/dashboard' : '/cleaning/dashboard';
+
+    // Mostramos la pantalla de sincronización mientras el servidor decide si
+    // debe sincronizar (solo si pasó más de 1 hora desde la última vez).
+    setSyncing(true);
+    try {
+      await fetch('/api/sync-on-login', {
+        method: 'POST',
+        credentials: 'include',
+        mode: 'same-origin',
+      });
+    } catch (error) {
+      // Si la sincronización falla, igual permitimos el acceso.
+    }
+
+    window.location.href = destination;
+  }
+
+  if (syncing) {
+    return (
+      <main className="mx-auto flex min-h-screen max-w-xl items-center px-6 py-16">
+        <div className="w-full rounded-3xl bg-white p-10 text-center shadow-soft">
+          <div className="mx-auto h-14 w-14 animate-spin rounded-full border-4 border-slate-200 border-t-accent" />
+          <h1 className="mt-8 text-2xl font-semibold text-slate-900">Sincronizando calendarios…</h1>
+          <p className="mt-3 text-slate-600">
+            Estamos actualizando tus reservas y limpiezas antes de entrar al panel.
+          </p>
+          <p className="mt-2 text-sm text-slate-500">Esto puede tardar unos segundos.</p>
+        </div>
+      </main>
+    );
   }
 
   return (
@@ -83,7 +110,6 @@ export default function LoginPage() {
             {loading ? 'Validando...' : 'Entrar'}
           </button>
         </form>
-        {/* Debug output removed to avoid showing raw API messages before redirect */}
       </div>
     </main>
   );
