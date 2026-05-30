@@ -116,7 +116,7 @@ export function CleaningDashboardView({ cleaningsToday, upcomingCleanings, userN
           <p className="text-base font-medium text-slate-500">No hay limpiezas para esta vista.</p>
         </div>
       ) : (
-        <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+        <div className="mx-auto flex max-w-2xl flex-col gap-6">
           {cardRows.map((cleaning) => {
             const type = cleaning.reservation.sourceType;
             const style = platformStyles[type];
