@@ -51,11 +51,6 @@ export function CleaningDashboardView({ cleaningsToday, upcomingCleanings, userN
   const displayedCleanings = cleanings.slice(0, displayCount);
   const remainingCount = cleanings.length - displayedCleanings.length;
 
-  const title = activeTab === 'today' ? 'Limpiezas programadas' : 'Limpiezas futuras';
-  const subtitle = activeTab === 'today'
-    ? `${cleaningsToday.length} limpieza(s) de hoy`
-    : `${upcomingCleanings.length} próximas limpieza(s)`;
-
   const cardRows = useMemo(
     () => displayedCleanings.map((cleaning, index) => ({
       ...cleaning,
@@ -66,56 +61,53 @@ export function CleaningDashboardView({ cleaningsToday, upcomingCleanings, userN
     [displayedCleanings]
   );
 
+  const headlineCount = cleanings.length;
+  const headline = activeTab === 'today'
+    ? `Tienes ${headlineCount} limpieza${headlineCount === 1 ? '' : 's'} hoy`
+    : `Tienes ${headlineCount} limpieza${headlineCount === 1 ? '' : 's'} próximas`;
+
   return (
-    <div className="space-y-8">
-      <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <p className="text-sm uppercase tracking-[0.3em] text-slate-500">{activeTab === 'today' ? 'Hoy' : 'Próximas'}</p>
-          <h1 className="mt-2 text-3xl font-semibold text-slate-900">Panel de limpieza</h1>
-          <p className="mt-2 text-sm text-slate-600">Hola {userName}, selecciona Hoy o Próximas limpiezas.</p>
-        </div>
-        <div className="inline-flex rounded-full bg-slate-100 p-1">
+    <div className="space-y-10">
+      <div className="flex flex-col items-center gap-7">
+        <p className="text-sm font-medium text-slate-500">Hola {userName}</p>
+
+        <div className="inline-flex rounded-full bg-slate-100 p-1.5 shadow-inner">
           <button
             type="button"
+            aria-pressed={activeTab === 'today'}
             onClick={() => {
               setActiveTab('today');
               setShowMoreToday(false);
             }}
-            className={`rounded-full px-5 py-2 text-sm font-semibold transition ${
+            className={`rounded-full px-10 py-3 text-base font-semibold transition ${
               activeTab === 'today'
-                ? 'bg-slate-900 text-white'
+                ? 'bg-slate-900 text-white shadow-md'
                 : 'text-slate-600 hover:text-slate-900'
             }`}>
-            Today
+            Hoy
           </button>
           <button
             type="button"
+            aria-pressed={activeTab === 'upcoming'}
             onClick={() => {
               setActiveTab('upcoming');
               setShowMoreUpcoming(false);
             }}
-            className={`rounded-full px-5 py-2 text-sm font-semibold transition ${
+            className={`rounded-full px-10 py-3 text-base font-semibold transition ${
               activeTab === 'upcoming'
-                ? 'bg-slate-900 text-white'
+                ? 'bg-slate-900 text-white shadow-md'
                 : 'text-slate-600 hover:text-slate-900'
             }`}>
-            Upcoming
+            Próximas
           </button>
         </div>
+
+        <h1 className="text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+          {headline}
+        </h1>
       </div>
 
       <div className="space-y-4 rounded-[32px] border border-slate-200 bg-white p-6 shadow-soft">
-        <div className="flex flex-wrap items-center justify-between gap-4">
-          <div>
-            <p className="text-sm uppercase tracking-[0.3em] text-slate-500">{activeTab === 'today' ? 'Hoy' : 'Próximas'}</p>
-            <h2 className="mt-2 text-2xl font-semibold text-slate-900">{title}</h2>
-            <p className="mt-1 text-sm text-slate-600">{subtitle}</p>
-          </div>
-          <div className="rounded-full bg-slate-100 px-4 py-2 text-sm font-semibold text-slate-700">
-            {cleanings.length} limpio(s)
-          </div>
-        </div>
-
         <div className="space-y-5">
           {cardRows.length === 0 ? (
             <p className="text-sm text-slate-600">No hay limpiezas para esta vista.</p>
