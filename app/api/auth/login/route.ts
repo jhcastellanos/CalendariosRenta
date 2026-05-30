@@ -25,20 +25,9 @@ export async function POST(request: NextRequest) {
   }
 
   const token = signToken({ id: user.id, name: user.name, email: user.email, role: user.role });
-  // Before completing login, perform a full calendar sync so the UI shows updated data.
-  try {
-    if (process.env.NODE_ENV !== 'production') {
-      console.log('[LOGIN] Triggering calendar sync before completing login for user', user.email);
-    }
-    // Import the sync implementation dynamically so build-time analysis
-    // doesn't evaluate database/network code (avoids running Prisma/fetch at build).
-    const { syncAllCalendarSources } = await import('@/lib/sync-service');
-    await syncAllCalendarSources();
-  } catch (err) {
-    console.error('[LOGIN] Calendar sync failed during login:', err);
-    return NextResponse.json({ message: 'Error sincronizando calendarios' }, { status: 500 });
-  }
 
+  // Note: calendar syncing is handled by AutoSyncProvider (on page load and
+  // every few minutes), so we intentionally do NOT block login on a full sync.
   const response = NextResponse.json({ id: user.id, name: user.name, email: user.email, role: user.role });
   response.headers.set('Set-Cookie', getSessionCookie(token));
   return response;
