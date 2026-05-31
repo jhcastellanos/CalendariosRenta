@@ -27,6 +27,8 @@ const platformStyles = {
     accentText: 'text-[#E61E4D]',
     avatar: 'bg-gradient-to-br from-[#FF5A5F] to-[#E61E4D]',
     glow: 'group-hover:ring-[#FF5A5F]/40',
+    alertBorder: 'border-[#FF5A5F]',
+    alertIconBg: 'bg-[#FFF1F2]',
   },
   vrbo: {
     name: 'Vrbo',
@@ -34,6 +36,8 @@ const platformStyles = {
     accentText: 'text-[#1D4ED8]',
     avatar: 'bg-gradient-to-br from-[#3B82F6] to-[#1D4ED8]',
     glow: 'group-hover:ring-[#3B82F6]/40',
+    alertBorder: 'border-[#3B82F6]',
+    alertIconBg: 'bg-[#EFF6FF]',
   },
 };
 
@@ -147,8 +151,8 @@ export function CleaningDashboardView({ cleaningsToday, upcomingCleanings, userN
                   <p className="mt-2 text-lg font-semibold text-slate-700">{cleaning.property.title}</p>
 
                   {cleaning.priority && (
-                    <div className="mt-5 flex items-start gap-3 rounded-2xl border border-amber-200 bg-amber-50 p-4">
-                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-600">
+                    <div className={`mt-5 flex items-start gap-3 rounded-2xl border-2 bg-white p-4 ${style.alertBorder}`}>
+                      <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${style.alertIconBg} ${style.accentText}`}>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
                           <path d="m10.29 3.86-8.18 14A2 2 0 0 0 3.83 21h16.34a2 2 0 0 0 1.72-3.14l-8.18-14a2 2 0 0 0-3.42 0Z" />
                           <line x1="12" y1="9" x2="12" y2="13" />
@@ -156,8 +160,8 @@ export function CleaningDashboardView({ cleaningsToday, upcomingCleanings, userN
                         </svg>
                       </span>
                       <div className="min-w-0">
-                        <p className="text-sm font-bold text-amber-700">Prioridad en la limpieza</p>
-                        <p className="mt-0.5 text-xs leading-snug text-amber-600">
+                        <p className={`text-sm font-bold ${style.accentText}`}>Prioridad en la limpieza</p>
+                        <p className={`mt-0.5 text-xs leading-snug ${style.accentText}`}>
                           Hay un check-in el mismo día en esta propiedad.
                         </p>
                       </div>
