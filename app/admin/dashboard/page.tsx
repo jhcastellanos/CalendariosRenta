@@ -40,7 +40,6 @@ export default async function AdminDashboard() {
               <p className="text-sm uppercase tracking-[0.3em] text-slate-500">Sincronización</p>
               <h2 className="mt-3 text-2xl font-semibold text-slate-900">Última sincronización</h2>
               <p className="mt-4 text-slate-600">{lastSync ? new Date(lastSync.syncedAt).toLocaleString('es-ES') : 'Aún no hay sincronizaciones'}</p>
-              <p className="mt-3 text-slate-500">Fuente afectada: {lastSync?.calendarSourceId ?? 'N/A'}</p>
             </section>
           </div>
         </div>

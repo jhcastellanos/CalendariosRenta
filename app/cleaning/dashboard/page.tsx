@@ -49,9 +49,34 @@ export default async function CleaningDashboard() {
     },
   });
 
+  // A cleaning is "priority" when there's a check-in the same day in the same
+  // property (back-to-back turnover). Build a lookup of active check-ins so we
+  // can flag it.
+  const allCleanings = [...cleaningsToday, ...upcomingCleanings];
+  const propertyIds = Array.from(new Set(allCleanings.map((c) => c.propertyId)));
+
+  const checkInReservations = propertyIds.length
+    ? await prisma.reservation.findMany({
+        where: {
+          propertyId: { in: propertyIds },
+          status: 'active',
+          checkInDate: { gte: today },
+        },
+        select: { propertyId: true, checkInDate: true },
+      })
+    : [];
+
+  const dateKey = (date: Date) => date.toISOString().slice(0, 10);
+  const checkInIndex = new Set(
+    checkInReservations.map((reservation) => `${reservation.propertyId}|${dateKey(reservation.checkInDate)}`)
+  );
+  const hasSameDayCheckIn = (cleaning: (typeof allCleanings)[number]) =>
+    checkInIndex.has(`${cleaning.propertyId}|${dateKey(cleaning.cleaningDate)}`);
+
   const cleaningsTodayForClient = cleaningsToday.map((cleaning) => ({
     ...cleaning,
     cleaningDate: cleaning.cleaningDate.toISOString(),
+    priority: hasSameDayCheckIn(cleaning),
     reservation: {
       ...cleaning.reservation,
       checkOutDate: cleaning.reservation.checkOutDate.toISOString(),
@@ -61,6 +86,7 @@ export default async function CleaningDashboard() {
   const upcomingCleaningsForClient = upcomingCleanings.map((cleaning) => ({
     ...cleaning,
     cleaningDate: cleaning.cleaningDate.toISOString(),
+    priority: hasSameDayCheckIn(cleaning),
     reservation: {
       ...cleaning.reservation,
       checkOutDate: cleaning.reservation.checkOutDate.toISOString(),

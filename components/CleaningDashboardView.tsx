@@ -2,27 +2,21 @@
 
 import { useMemo, useState } from 'react';
 
+type CleaningItem = {
+  id: string;
+  cleaningDate: string;
+  priority: boolean;
+  property: { title: string; photoUrl: string | null };
+  reservation: {
+    checkOutDate: string;
+    guestName: string | null;
+    sourceType: 'airbnb' | 'vrbo';
+  };
+};
+
 interface CleaningViewProps {
-  cleaningsToday: Array<{
-    id: string;
-    cleaningDate: string;
-    property: { title: string; photoUrl: string | null };
-    reservation: {
-      checkOutDate: string;
-      guestName: string | null;
-      sourceType: 'airbnb' | 'vrbo';
-    };
-  }>;
-  upcomingCleanings: Array<{
-    id: string;
-    cleaningDate: string;
-    property: { title: string; photoUrl: string | null };
-    reservation: {
-      checkOutDate: string;
-      guestName: string | null;
-      sourceType: 'airbnb' | 'vrbo';
-    };
-  }>;
+  cleaningsToday: CleaningItem[];
+  upcomingCleanings: CleaningItem[];
   userName: string;
 }
 
@@ -121,15 +115,14 @@ export function CleaningDashboardView({ cleaningsToday, upcomingCleanings, userN
             const type = cleaning.reservation.sourceType;
             const style = platformStyles[type];
             const imageUrl = cleaning.property.photoUrl || '/default-house.jpg';
-            const formattedCheckout = cleaning.checkOutDate.toLocaleDateString('es-ES', {
+            const rawCheckout = cleaning.checkOutDate.toLocaleDateString('es-ES', {
+              weekday: 'long',
               day: 'numeric',
-              month: 'short',
+              month: 'long',
               year: 'numeric',
               timeZone: 'UTC',
             });
-            const guestName = cleaning.reservation.guestName || 'Reserva sin nombre';
-            const initial = guestName.trim().charAt(0).toUpperCase() || 'R';
-
+            const formattedCheckout = rawCheckout.charAt(0).toUpperCase() + rawCheckout.slice(1);
             return (
               <div
                 key={cleaning.id}
@@ -150,19 +143,26 @@ export function CleaningDashboardView({ cleaningsToday, upcomingCleanings, userN
 
                 <div className="p-6">
                   <p className={`text-xs font-bold uppercase tracking-[0.22em] ${style.accentText}`}>Checkout</p>
-                  <p className="mt-1.5 text-3xl font-bold leading-tight text-slate-900">{formattedCheckout}</p>
+                  <p className="mt-1.5 text-2xl font-bold leading-tight text-slate-900">{formattedCheckout}</p>
                   <p className="mt-2 text-lg font-semibold text-slate-700">{cleaning.property.title}</p>
 
-                  <div className="mt-5 flex items-center gap-3 border-t border-slate-100 pt-4">
-                    <span
-                      className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-base font-bold text-white ${style.avatar}`}>
-                      {initial}
-                    </span>
-                    <div className="min-w-0">
-                      <p className="truncate text-sm font-semibold text-slate-800">{guestName}</p>
-                      <p className="text-xs text-slate-400">Reservado</p>
+                  {cleaning.priority && (
+                    <div className="mt-5 flex items-start gap-3 rounded-2xl border border-amber-200 bg-amber-50 p-4">
+                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+                          <path d="m10.29 3.86-8.18 14A2 2 0 0 0 3.83 21h16.34a2 2 0 0 0 1.72-3.14l-8.18-14a2 2 0 0 0-3.42 0Z" />
+                          <line x1="12" y1="9" x2="12" y2="13" />
+                          <line x1="12" y1="17" x2="12.01" y2="17" />
+                        </svg>
+                      </span>
+                      <div className="min-w-0">
+                        <p className="text-sm font-bold text-amber-700">Prioridad en la limpieza</p>
+                        <p className="mt-0.5 text-xs leading-snug text-amber-600">
+                          Hay un check-in el mismo día en esta propiedad.
+                        </p>
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               </div>
             );
