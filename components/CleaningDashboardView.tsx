@@ -162,7 +162,7 @@ export function CleaningDashboardView({ cleaningsToday, upcomingCleanings, userN
                       <div className="min-w-0">
                         <p className={`text-sm font-bold ${style.accentText}`}>Prioridad en la limpieza</p>
                         <p className={`mt-0.5 text-xs leading-snug ${style.accentText}`}>
-                          Hay un check-in el mismo día en esta propiedad.
+                          Hay un <span className="font-bold uppercase">CHECK-IN</span> el mismo día en esta propiedad.
                         </p>
                       </div>
                     </div>
