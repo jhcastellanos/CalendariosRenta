@@ -1,0 +1,42 @@
+{
+  "id": "/",
+  "name": "Calendarios Renta",
+  "short_name": "Calendarios",
+  "description": "Gestión de propiedades de renta corta: reservas de Airbnb y VRBO con limpiezas automáticas.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "background_color": "#f7f8fa",
+  "theme_color": "#ffffff",
+  "lang": "es",
+  "dir": "ltr",
+  "categories": ["business", "productivity", "travel"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
