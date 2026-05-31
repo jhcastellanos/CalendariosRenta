@@ -146,7 +146,7 @@ export function CleaningDashboardView({ cleaningsToday, upcomingCleanings, userN
                 </div>
 
                 <div className="p-6">
-                  <p className={`text-xs font-bold uppercase tracking-[0.22em] ${style.accentText}`}>Checkout</p>
+                  <p className={`text-xs font-bold uppercase tracking-[0.22em] ${style.accentText}`}>Limpieza</p>
                   <p className="mt-1.5 text-2xl font-bold leading-tight text-slate-900">{formattedCheckout}</p>
                   <p className="mt-2 text-lg font-semibold text-slate-700">{cleaning.property.title}</p>
 

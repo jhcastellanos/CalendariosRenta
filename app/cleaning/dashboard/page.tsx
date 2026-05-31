@@ -93,6 +93,20 @@ export default async function CleaningDashboard() {
     },
   }));
 
+  // Sort by date ascending; within the same day, priority cleanings (same-day
+  // check-in) come first.
+  const sortCleanings = (
+    a: { cleaningDate: string; priority: boolean },
+    b: { cleaningDate: string; priority: boolean }
+  ) => {
+    const dateDiff = a.cleaningDate.localeCompare(b.cleaningDate);
+    if (dateDiff !== 0) return dateDiff;
+    return Number(b.priority) - Number(a.priority);
+  };
+
+  cleaningsTodayForClient.sort(sortCleanings);
+  upcomingCleaningsForClient.sort(sortCleanings);
+
   return (
     <PageShell>
       <div className="space-y-8">
