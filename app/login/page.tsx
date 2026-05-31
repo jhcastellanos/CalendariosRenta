@@ -74,8 +74,10 @@ export default function LoginPage() {
   return (
     <main className="mx-auto flex min-h-screen max-w-xl items-center px-6 py-16">
       <div className="w-full rounded-3xl bg-white p-10 shadow-soft">
-        <h1 className="text-3xl font-semibold text-slate-900">Iniciar sesión</h1>
-        <p className="mt-2 text-slate-600">Accede al panel privado de calendarios y limpiezas.</p>
+        <p className="text-sm uppercase tracking-[0.35em] text-slate-500">Calendarios Renta</p>
+        <h1 className="mt-4 text-3xl font-semibold tracking-tight text-slate-900">Gestiona propiedades, reservas y limpiezas</h1>
+        <p className="mt-3 text-slate-600">Sistema privado para sincronizar calendarios de Airbnb y VRBO con un panel dedicado para limpieza.</p>
+        <p className="mt-8 text-lg font-semibold text-slate-900">Iniciar sesión</p>
 
         <form className="mt-8 space-y-5" onSubmit={handleLogin}>
           <div>
