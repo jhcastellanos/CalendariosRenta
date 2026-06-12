@@ -1,5 +1,7 @@
+import { SourceType } from '@prisma/client';
 import { prisma } from './prisma';
 import { reconcileCleaningsForProperty } from './ical';
+import { isRealReservationEvent } from './ical-filters';
 
 export async function syncAllCalendarSources() {
   try {
@@ -34,7 +36,7 @@ export async function syncAllCalendarSources() {
         const iCalData = await response.text();
 
         // Parse iCal and create/update reservations
-        const reservations = parseICalData(iCalData, source.id);
+        const reservations = parseICalData(iCalData, source.id, source.sourceType);
 
         // Clear existing reservations for this source and re-add
         await prisma.cleaning.deleteMany({
@@ -90,7 +92,7 @@ export async function syncAllCalendarSources() {
   }
 }
 
-function parseICalData(iCalData: string, sourceId: string): any[] {
+function parseICalData(iCalData: string, sourceId: string, sourceType: SourceType): any[] {
   const reservations: any[] = [];
 
   // Split by VEVENT
@@ -102,24 +104,32 @@ function parseICalData(iCalData: string, sourceId: string): any[] {
     // Extract dates and summary
     const dtstart = eventData.match(/DTSTART(?:;[^:]*)?:(\d{8})/);
     const dtend = eventData.match(/DTEND(?:;[^:]*)?:(\d{8})/);
-    const summary = eventData.match(/SUMMARY:(.+?)(?:\r?\n|$)/);
+    const summary = extractIcalField(eventData, 'SUMMARY');
+    const description = extractIcalField(eventData, 'DESCRIPTION');
     const uid = eventData.match(/UID:(.+?)(?:\r?\n|$)/);
     const status = eventData.match(/STATUS:(.+?)(?:\r?\n|$)/)?.[1]?.trim().toUpperCase() ?? 'CONFIRMED';
     const transp = eventData.match(/TRANSP:(.+?)(?:\r?\n|$)/)?.[1]?.trim().toUpperCase();
     const busyStatus = eventData.match(/X-MICROSOFT-CDO-BUSYSTATUS:(.+?)(?:\r?\n|$)/)?.[1]?.trim().toUpperCase();
 
     if (dtstart && dtend) {
-      const summaryText = summary ? summary[1].trim() : '';
-      const isBlockedSummary = /blocked|bloqueado|no[- ]disponible|unavailable|hold|block/i.test(summaryText);
-      const isTransparent = transp === 'TRANSPARENT';
-      const isFreeBusyFree = busyStatus === 'FREE';
+      const summaryText = summary.trim();
 
-      if (status === 'CANCELLED' || isTransparent || isFreeBusyFree || isBlockedSummary) {
+      if (
+        !isRealReservationEvent({
+          summary: summaryText,
+          description,
+          sourceType,
+          status,
+          transp,
+          busyStatus,
+        })
+      ) {
         continue;
       }
+
       const checkInDate = parseICalDate(dtstart[1]);
       const checkOutDate = parseICalDate(dtend[1]);
-      const guestName = summary ? summary[1].trim() : 'Guest';
+      const guestName = summaryText || 'Guest';
       const externalUid = uid ? uid[1].trim() : `${sourceId}-${i}`;
 
       reservations.push({
@@ -132,6 +142,29 @@ function parseICalData(iCalData: string, sourceId: string): any[] {
   }
 
   return reservations;
+}
+
+function extractIcalField(eventData: string, field: string): string {
+  const lines = eventData.split(/\r?\n/);
+  let value = '';
+  let capturing = false;
+
+  for (const line of lines) {
+    if (line.startsWith(`${field}:`)) {
+      value = line.slice(field.length + 1);
+      capturing = true;
+      continue;
+    }
+
+    if (capturing && /^[ \t]/.test(line)) {
+      value += line.trim();
+      continue;
+    }
+
+    if (capturing) break;
+  }
+
+  return value.trim();
 }
 
 function parseICalDate(dateStr: string): Date {

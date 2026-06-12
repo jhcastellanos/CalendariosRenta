@@ -1,6 +1,7 @@
 import ical from 'node-ical';
 import { prisma } from './prisma';
 import { SourceType, ReservationStatus, CleaningStatus } from '@prisma/client';
+import { isRealReservationEvent } from './ical-filters';
 
 const SOURCE_COLOR_MAP: Record<SourceType, string> = {
   airbnb: '#f15a5a',
@@ -44,7 +45,21 @@ export async function syncIcalSource(sourceId: string) {
   const calendarEvents = Object.values(events).filter((item) => (item as any).type === 'VEVENT');
 
   for (const item of calendarEvents) {
-    const event = extractEventData(item as ical.VEvent);
+    const vevent = item as ical.VEvent;
+
+    if (
+      !isRealReservationEvent({
+        summary: vevent.summary ? String(vevent.summary) : null,
+        description: vevent.description ? String(vevent.description) : null,
+        sourceType: source.sourceType,
+        status: vevent.status ? String(vevent.status) : null,
+        transp: (vevent as { transp?: string }).transp ?? null,
+      })
+    ) {
+      continue;
+    }
+
+    const event = extractEventData(vevent);
     if (!event.externalUid || !event.checkInDate || !event.checkOutDate) {
       continue;
     }
