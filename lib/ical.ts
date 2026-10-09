@@ -75,6 +75,9 @@ export async function syncIcalSource(sourceId: string) {
     });
 
     if (existing) {
+      if (existing.isManual) {
+        continue;
+      }
       await prisma.reservation.update({
         where: { id: existing.id },
         data: {
@@ -105,6 +108,9 @@ export async function syncIcalSource(sourceId: string) {
   });
 
   for (const reservation of existingReservations) {
+    if (reservation.isManual) {
+      continue;
+    }
     if (!incomingUids.has(reservation.externalUid)) {
       await prisma.reservation.update({
         where: { id: reservation.id },
@@ -140,6 +146,9 @@ export async function reconcileCleaningsForProperty(propertyId: string) {
     const cleaningDate = reservation.checkOutDate;
 
     if (existingCleaning) {
+      if (reservation.isManual) {
+        continue;
+      }
       await prisma.cleaning.update({
         where: { id: existingCleaning.id },
         data: { cleaningDate, status: CleaningStatus.pending },
@@ -160,7 +169,7 @@ export async function reconcileCleaningsForProperty(propertyId: string) {
   const canceledCleanings = await prisma.cleaning.findMany({
     where: {
       propertyId,
-      reservation: { status: ReservationStatus.canceled },
+      reservation: { status: ReservationStatus.canceled, isManual: false },
     },
   });
 

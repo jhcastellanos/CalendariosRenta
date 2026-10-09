@@ -23,13 +23,28 @@ enum CleaningStatus {
   canceled
 }
 
+enum NotificationType {
+  new_cleaning
+  canceled_cleaning
+}
+
 model User {
-  id           String   @id @default(cuid())
-  name         String
-  email        String   @unique
-  passwordHash String
-  role         Role     @default(admin)
-  createdAt    DateTime @default(now())
+  id                  String    @id @default(cuid())
+  name                String
+  email               String    @unique
+  passwordHash        String
+  role                Role      @default(admin)
+  notificationsReadAt DateTime?
+  createdAt           DateTime  @default(now())
+}
+
+model CalendarNotification {
+  id            String           @id @default(cuid())
+  type          NotificationType
+  propertyId    String
+  propertyTitle String
+  cleaningDate  DateTime
+  createdAt     DateTime         @default(now())
 }
 
 model Property {
@@ -74,6 +89,8 @@ model Reservation {
   checkOutDate  DateTime
   guestName     String?
   status        ReservationStatus @default(active)
+  /// Manual entries are not created from iCal; sync must never delete, cancel, or overwrite them.
+  isManual      Boolean           @default(false)
   createdAt     DateTime          @default(now())
   updatedAt     DateTime          @updatedAt
   cleanings     Cleaning[]

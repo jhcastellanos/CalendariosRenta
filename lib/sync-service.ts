@@ -2,6 +2,7 @@ import { SourceType } from '@prisma/client';
 import { prisma } from './prisma';
 import { reconcileCleaningsForProperty } from './ical';
 import { isRealReservationEvent } from './ical-filters';
+import { getPendingCleaningSnapshots, notificationMessage, recordCleaningChanges } from './calendar-notifications';
 
 export async function syncAllCalendarSources() {
   try {
@@ -10,7 +11,7 @@ export async function syncAllCalendarSources() {
     // skip the sync to prevent build-time failures on platforms like Vercel.
     if (!process.env.DATABASE_URL) {
       console.log('[SYNC] Skipping automatic sync because DATABASE_URL is not configured');
-      return;
+      return { changes: 0, notifications: [] };
     }
     console.log('[SYNC] Starting automatic sync of all calendar sources...');
     
@@ -20,8 +21,11 @@ export async function syncAllCalendarSources() {
 
     if (calendarSources.length === 0) {
       console.log('[SYNC] No calendar sources found to sync');
-      return;
+      return { changes: 0, notifications: [] };
     }
+
+    const hadPriorSync = !!(await prisma.syncLog.findFirst({ where: { success: true } }));
+    const beforeCleanings = await getPendingCleaningSnapshots(prisma);
 
     for (const source of calendarSources) {
       try {
@@ -38,12 +42,18 @@ export async function syncAllCalendarSources() {
         // Parse iCal and create/update reservations
         const reservations = parseICalData(iCalData, source.id, source.sourceType);
 
-        // Clear existing reservations for this source and re-add
+        // Clear synced reservations for this source and re-add. Manual reservations
+        // (not from iCal) are never deleted or touched.
         await prisma.cleaning.deleteMany({
-          where: { reservation: { calendarSourceId: source.id } },
+          where: {
+            reservation: {
+              calendarSourceId: source.id,
+              isManual: false,
+            },
+          },
         });
         await prisma.reservation.deleteMany({
-          where: { calendarSourceId: source.id },
+          where: { calendarSourceId: source.id, isManual: false },
         });
 
         // Create new reservations
@@ -86,9 +96,24 @@ export async function syncAllCalendarSources() {
       }
     }
 
+    const afterCleanings = await getPendingCleaningSnapshots(prisma);
+    const changes = hadPriorSync
+      ? await recordCleaningChanges(prisma, beforeCleanings, afterCleanings)
+      : [];
+
     console.log('[SYNC] Automatic sync completed');
+    return {
+      changes: changes.length,
+      notifications: changes.map((item) => ({
+        type: item.type,
+        propertyTitle: item.propertyTitle,
+        cleaningDate: item.cleaningDate.toISOString(),
+        message: notificationMessage(item.type, item.propertyTitle, item.cleaningDate),
+      })),
+    };
   } catch (error) {
     console.error('[SYNC] Error in syncAllCalendarSources:', error);
+    return { changes: 0, notifications: [] };
   }
 }
 
