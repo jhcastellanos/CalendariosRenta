@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata, Viewport } from 'next';
 import { PWAManager } from '@/components/PWAManager';
+import { NotificationManager } from '@/components/NotificationManager';
 
 export const dynamic = 'force-dynamic';
 
@@ -47,6 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="es">
       <body className="min-h-screen bg-surface text-slate-900">
         {children}
+        <NotificationManager />
         <PWAManager />
       </body>
     </html>

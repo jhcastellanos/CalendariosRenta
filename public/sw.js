@@ -1,5 +1,5 @@
 /* Calendarios Renta - Service Worker */
-const CACHE_VERSION = 'cr-cache-v1';
+const CACHE_VERSION = 'cr-cache-v2';
 const OFFLINE_URL = '/offline.html';
 
 // Only precache things we know exist to avoid breaking install.
@@ -25,6 +25,22 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('message', (event) => {
   if (event.data === 'SKIP_WAITING') self.skipWaiting();
+});
+
+self.addEventListener('notificationclick', (event) => {
+  event.notification.close();
+  const targetUrl = event.notification.data?.url || '/';
+  event.waitUntil(
+    self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then((clients) => {
+      for (const client of clients) {
+        if ('focus' in client) {
+          client.navigate(targetUrl);
+          return client.focus();
+        }
+      }
+      if (self.clients.openWindow) return self.clients.openWindow(targetUrl);
+    })
+  );
 });
 
 self.addEventListener('fetch', (event) => {

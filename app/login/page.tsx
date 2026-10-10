@@ -49,6 +49,7 @@ export default function LoginPage() {
         credentials: 'include',
         mode: 'same-origin',
       });
+      window.dispatchEvent(new CustomEvent('calendar-sync-complete'));
     } catch (error) {
       // Si la sincronización falla, igual permitimos el acceso.
     }

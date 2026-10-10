@@ -25,9 +25,14 @@ export async function POST() {
 
     // Import dinámico para que el análisis de build no ejecute código de DB/red.
     const { syncAllCalendarSources } = await import('@/lib/sync-service');
-    await syncAllCalendarSources();
+    const result = await syncAllCalendarSources();
 
-    return NextResponse.json({ synced: true, syncedAt: new Date().toISOString() });
+    return NextResponse.json({
+      synced: true,
+      syncedAt: new Date().toISOString(),
+      changes: result?.changes ?? 0,
+      notifications: result?.notifications ?? [],
+    });
   } catch (error) {
     console.error('[SYNC-ON-LOGIN] Calendar sync failed:', error);
     // No bloqueamos el acceso si la sincronización falla.
